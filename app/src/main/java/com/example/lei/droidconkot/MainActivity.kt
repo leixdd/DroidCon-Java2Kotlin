@@ -6,25 +6,36 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
-    var CarList : ArrayList<K_Car> = ArrayList<K_Car>()
-    var TruckList : ArrayList<K_Car> = ArrayList<K_Car>()
-    var numLanes : Int = 0
-    var road : String = ""
-
-    lateinit var secondRoad : String
-
     //Exec4
-    //var Names : ArrayList<String> = ArrayList<String>();
+    var Names : ArrayList<String> = ArrayList<String>();
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        Names = arrayListOf("Lei", "Eden", "Meow");
 
-        CarList = arrayListOf(K_Car("ASC123", "McLaren", false), K_Car("AS2123", "Veyron", false))
-        secondRoad = "Pangalawang Road"
+        for(N in Names) {
+            test.text = ("${test.text.toString()} \nName: ${N} -> Gender: ${getGender(N)}" )
+        }
+
+    }
+
+    fun getGender(n : String) : String {
+        when(n) {
+            "Lei" -> {
+                return "Male"
+            }
+            "Eden" -> {
+                return "Female"
+            }
+        }
+
+
+        return "Unknown"
     }
 
 
 }
+
