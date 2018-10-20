@@ -4,12 +4,49 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="vertical">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="Kalye : "
+        android:id="@+id/kalye"/>
+
+
+    <TextView
+        android:id="@+id/nextKalye"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Susunod na Kalye : " />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ilang lanes : "
+        android:id="@+id/numberLanes"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ilang Cars : "
+        android:id="@+id/numberCars"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kotse Nasa Huli : "
+        android:id="@+id/LastCar"/>
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Plate Number : "
         android:id="@+id/plate_number"/>
 
 </LinearLayout>
