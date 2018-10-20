@@ -16,8 +16,9 @@ class MainActivity : AppCompatActivity() {
 
         Names = arrayListOf("Lei", "Eden", "Meow");
 
-        
+
         for(N in Names) {
+
             test.text = ("${test.text.toString()} \nName: $N -> Gender: ${getGender(N)}" )
         }
 
@@ -32,8 +33,6 @@ class MainActivity : AppCompatActivity() {
                 return "Female"
             }
         }
-
-
         return "Unknown"
     }
 
